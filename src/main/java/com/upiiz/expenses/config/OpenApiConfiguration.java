@@ -28,7 +28,7 @@ import org.springframework.context.annotation.Configuration;
                 ),
                 @Server(
                         description = "Servidor de Produccion",
-                        url = "https://api-proyecto-final-wcbdf.onrender.com/swagger-ui/index.html#/"
+                        url = "https://api-proyecto-final-wcbdf.onrender.com"
                 )
         },
         tags = {
