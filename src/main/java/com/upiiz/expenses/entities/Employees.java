@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.Date;
 
 @Data
 @AllArgsConstructor
@@ -31,7 +32,7 @@ public class Employees {
     private String last_name;
 
     @NotNull
-    private LocalDate hire_date;
+    private Date hire_date;
 
     @Size(max = 100)
     private String position;

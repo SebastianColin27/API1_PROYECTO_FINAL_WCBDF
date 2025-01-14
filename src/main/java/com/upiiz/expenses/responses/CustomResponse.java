@@ -12,7 +12,7 @@ import java.util.List;
 public class CustomResponse<T> {
     private int estado;
     private String msg;
-    private T expenses;
+    private T employees;
     private List<Link> links;
 
 }

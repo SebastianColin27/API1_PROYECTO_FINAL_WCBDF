@@ -44,10 +44,10 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> {
                     // Configuración de permisos por endpoint
                     auth.requestMatchers("/swagger-ui/**", "/v3/api-docs/**").hasAuthority("CREATE");
-                    auth.requestMatchers(HttpMethod.GET, "/api/v1/expenses/**").hasAuthority("READ");
-                    auth.requestMatchers(HttpMethod.POST, "/api/v1/expenses/**").hasAuthority("CREATE");
-                    auth.requestMatchers(HttpMethod.PUT, "/api/v1/expenses/**").hasAuthority("UPDATE");
-                    auth.requestMatchers(HttpMethod.DELETE, "/api/v1/expenses/**").hasAuthority("DELETE");
+                    auth.requestMatchers(HttpMethod.GET, "/api/v1/employees/**").hasAuthority("READ");
+                    auth.requestMatchers(HttpMethod.POST, "/api/v1/employees/**").hasAuthority("CREATE");
+                    auth.requestMatchers(HttpMethod.PUT, "/api/v1/employees/**").hasAuthority("UPDATE");
+                    auth.requestMatchers(HttpMethod.DELETE, "/api/v1/employees/**").hasAuthority("DELETE");
                     auth.anyRequest().authenticated();
                 })
                 .build();
